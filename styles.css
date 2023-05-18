@@ -1,0 +1,50 @@
+body {
+    background-image: url("blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    padding: 5px;
+    text-align: center;
+    background: #1a1a1a;
+    color: white;
+    font-size: 20px;
+    font-family: Monospace;
+    text-shadow: 0 0 3px #000d33, 0 0 5px #000000;
+}
+.text {
+    font-family: Fantasy;
+    color: black;
+    margin: 20px;
+    font-size: 50px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    text-align: center;
+}
+.paragraph {
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    color = black;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-size: 32px;
+    font-family: Bold;
+}
+.box {
+}
+.buttons {
+    text-align: center;
+
+}
+.button_text {
+    padding: 10px;
+    margin: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: grey;
+    color: white;
+}

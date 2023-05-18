@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset= "utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let paragraph = document.querySelector('.paragraph');
+                paragraph.addEventListener('mouseover', function() {
+                    paragraph.style.color = 'blue';
+                });
+
+                paragraph.addEventListener('mouseout', function() {
+                    paragraph.style.color = 'black';
+                });
+
+
+
+
+                let buttons = document.querySelectorAll('.button_text');
+                for (let i = 0; i < buttons.length; i++) {
+                    buttons[i].addEventListener('mouseover', function() {
+                        buttons[i].style.backgroundColor = '#8080ff';
+                    });
+                    buttons[i].addEventListener('mouseout', function() {
+                        buttons[i].style.backgroundColor = 'white';
+                    });
+                }
+
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Abd-T</h1>
+            <p>Welcome to my page</p>
+        </div>
+
+        <div>
+            <div class="text">
+                About me
+            </div>
+            <div class="box">
+                <p class="paragraph">
+                    Hello! My name is Abdulrahman Tabsheh, born in 2002, I have been intrigued with the subject of computer sciences and strive to expand my knowledge and expertise in the craft of programming, I believe in the power of continuous learning and embrace every chance to acquire new insights and perspectives, as for my academic persuits, I'm majoring in computer sciences at the lebanese university.
+                </p>
+            </div>
+            <br>
+            <div class="buttons">
+                <button class="button_text" onClick="location.href='second.html'">Trivial page</button>
+                <br>
+                <button class="button_text" onClick="location.href='third.html'">This is how I wrote Mario mirrored pyramide</button>
+                <br>
+                <button class="button_text" onClick="location.href='fourth.html'">Fantasy worlds I enjoy</button>
+                <br>
+            </div>
+        </div>
+
+        <br>
+
+        <footer>
+            <p>Very first attempt<br>
+                &#169; abdulrahman.tabsheh@gmail.com</p>
+        </footer>
+    </body>
+</html>
